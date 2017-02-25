@@ -1,0 +1,18 @@
+{
+  "name": "email-node",
+  "version": "1.0.0",
+  "description": "Macbook IDE evironment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" &amp;&amp; exit 1"
+  },
+  "author": "Robert Luisi",
+  "license": "MIT",
+  "FontAwesome/Font-Awesome": "*",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.2",
+    "express": "latest",
+    "nodemailer": "^0.7.1"
+  }
+}
