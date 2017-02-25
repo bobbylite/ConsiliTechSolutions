@@ -67,7 +67,7 @@ app.get("/getemail", function(request, response) {
         service: "Gmail",
         auth: {
             user: "robert.luisi@consilitechsolutions.com",
-            pass: "bingo321"
+            pass: "lalala"
         }
     });
 
@@ -99,16 +99,16 @@ app.get("/getemail", function(request, response) {
         smtpTransport.close();
     });
     console.log("About to send message... ");
-    
+
     //Fixes bug in b2.5.2.0 where the URL shows all email information. this will stay as "consilitechsolutions.com"
     app.get("/", function(request, response) {
-    response.sendFile(__dirname + "/views/index.html");
-});
+        response.sendFile(__dirname + "/views/index.html");
+    });
 
     console.log("SENT!!! WOO ");
 });
 
 //start the server
-app.listen(80);
+app.listen(8008);
 
 console.log("Opened Consilitechsolutions.com at http://localhost:80");
